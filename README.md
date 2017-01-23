@@ -158,10 +158,10 @@ Delphi internally attempts to simplify the process by managing delegates directl
 
 For example Delphi intercepts applicationDidFinishLaunchingWithOptions but does not expose the Options parameter to any application events or messages.  These Options are required by the Facebook framework and many other frameworks you might need for iOS apps.
 
-Since we can only have a single application delegate for the app when calling UIApplicationMain() we must consider making a copy of FMX.Platform.iOS and modifying our own version of it so we can respond to the delegates in the manner that they expect.
+Since we can only have a single application delegate for the app when calling UIApplicationMain() we must consider making a copy of FMX.Platform.iOS and modifying our own version of it so we can respond to the delegates in the manner that the framework expects.
 
 ## Missing Delphi functionality in FMX.Platform.iOS
-One workable solution is to add events or messages to the individual application delegates that we can subscribe in our main application.  Unfortunately this requires us to add TMessage related callbacks into the FMX.Platform.iOS unit.  Each TMessage specifically contains the same parameters as the delegate in the same format so we can make sure we forward them as intended to the sub-delegate in the Facebook (or Twitter) framework.   
+One workable solution is to add events or messages to the individual application delegates that we can subscribe in our main application.  This would be more congruent with the way it is done in Objective C.  Unfortunately this requires us to add TMessage related callbacks into the FMX.Platform.iOS unit.  Each TMessage specifically contains the same parameters as the delegate in the same format so we can make sure we forward them as intended to the sub-delegate in the Facebook (or Twitter) framework.   
 
 Since we need to add a bit of code to FMX.Platform.iOS, I suggest you make a copy of it, modify the copy and add the copy to each project.
 
@@ -175,7 +175,7 @@ Here are the steps required:
 //  id = Pointer;
 //  SEL = Pointer;
 ```
-5. Add the following TMessage<> types for the application delegates we wish to expose to the interface section:
+Add the following TMessage<> types for the application delegates we wish to expose to the interface section:
 ```Delphi
 type
   // Moved from implementation
@@ -217,31 +217,31 @@ type
     constructor Create(const AValue: TAppDelegate_applicationDidBecomeActive);
   end;
 ```
-6. Add the following variables to `TApplicationDelegate.applicationDidBecomeActive`:
+Add the following variables to `TApplicationDelegate.applicationDidBecomeActive`:
 ```Delphi
 var
   AppDelegate_applicationDidBecomeActive: TAppDelegate_applicationDidBecomeActive;
   AppDelegate_applicationDidBecomeActiveMessage: TAppDelegateMessage_applicationDidBecomeActive;
 ```
-7. Add the following code to `TApplicationDelegate.applicationDidBecomeActive`:
+Add the following code to `TApplicationDelegate.applicationDidBecomeActive`:
 ```Delphi
   AppDelegate_applicationDidBecomeActive.Application := TUIApplication.Wrap(application);
   AppDelegate_applicationDidBecomeActiveMessage := TAppDelegateMessage_applicationDidBecomeActive.Create(AppDelegate_applicationDidBecomeActive);
   TMessageManager.DefaultManager.SendMessage(Self, AppDelegate_applicationDidBecomeActiveMessage);
 ```
-8. Add the following variables to `TApplicationDelegate.applicationDidFinishLaunchingWithOptions`:
+Add the following variables to `TApplicationDelegate.applicationDidFinishLaunchingWithOptions`:
 ```Delphi
   AppDelegate_applicationDidFinishLaunchingWithOptions: TAppDelegate_applicationDidFinishLaunchingWithOptions;
   AppDelegate_applicationDidFinishLaunchingWithOptionsMessage: TAppDelegateMessage_applicationDidFinishLaunchingWithOptions;
 ```
-9. Add the following code to `TApplicationDelegate.applicationDidFinishLaunchingWithOptions`:
+Add the following code to `TApplicationDelegate.applicationDidFinishLaunchingWithOptions`:
 ```Delphi
   AppDelegate_applicationDidFinishLaunchingWithOptions.Application := TUIApplication.Wrap(application);
   AppDelegate_applicationDidFinishLaunchingWithOptions.Options := TNSDictionary.Wrap(options);
   AppDelegate_applicationDidFinishLaunchingWithOptionsMessage := TAppDelegateMessage_applicationDidFinishLaunchingWithOptions.Create(AppDelegate_applicationDidFinishLaunchingWithOptions);
   TMessageManager.DefaultManager.SendMessage(Self, AppDelegate_applicationDidFinishLaunchingWithOptionsMessage);
 ```
-10. Add the following variables to `TApplicationDelegate.applicationOpenURLWithOptions`:
+Add the following variables to `TApplicationDelegate.applicationOpenURLWithOptions`:
 ```Delphi
   AppDelegate_applicationOpenURLWithSourceAnnotation: TAppDelegate_applicationOpenURLWithSourceAnnotation;
   AppDelegate_applicationOpenURLWithSourceAnnotationMessage: TAppDelegateMessage_applicationOpenURLWithSourceAnnotation;
@@ -249,7 +249,7 @@ var
   annotation: id;
   sourceApplication: PNSString;
 ```
-11. Add the following code to `TApplicationDelegate.applicationOpenURLWithOptions`:
+Add the following code to `TApplicationDelegate.applicationOpenURLWithOptions`:
 ```Delphi
   OptionsDict := TNSDictionary.Wrap(options);
   annotation := OptionsDict.valueForKey(UIApplicationOpenURLOptionsAnnotationKey);
@@ -261,12 +261,12 @@ var
   AppDelegate_applicationOpenURLWithSourceAnnotationMessage := TAppDelegateMessage_applicationOpenURLWithSourceAnnotation.Create(AppDelegate_applicationOpenURLWithSourceAnnotation);
   TMessageManager.DefaultManager.SendMessage(Self, AppDelegate_applicationOpenURLWithSourceAnnotationMessage);
 ```
-12. Add the following variables to `TApplicationDelegate.applicationOpenURLWithSourceAnnotation`:
+Add the following variables to `TApplicationDelegate.applicationOpenURLWithSourceAnnotation`:
 ```Delphi
   AppDelegate_applicationOpenURLWithSourceAnnotation: TAppDelegate_applicationOpenURLWithSourceAnnotation;
   AppDelegate_applicationOpenURLWithSourceAnnotationMessage: TAppDelegateMessage_applicationOpenURLWithSourceAnnotation;
 ```
-13. Add the following code to `TApplicationDelegate.applicationOpenURLWithSourceAnnotation`:
+Add the following code to `TApplicationDelegate.applicationOpenURLWithSourceAnnotation`:
 ```Delphi
   AppDelegate_applicationOpenURLWithSourceAnnotation.Application := TUIApplication.Wrap(application);
   AppDelegate_applicationOpenURLWithSourceAnnotation.Url := TNSUrl.Wrap(url);
@@ -275,7 +275,7 @@ var
   AppDelegate_applicationOpenURLWithSourceAnnotationMessage := TAppDelegateMessage_applicationOpenURLWithSourceAnnotation.Create(AppDelegate_applicationOpenURLWithSourceAnnotation);
   TMessageManager.DefaultManager.SendMessage(Self, AppDelegate_applicationOpenURLWithSourceAnnotationMessage);
 ```
-14. Then at the bottom of the implementation section add the following code to implement the TMessages: 
+Then at the bottom of the implementation section add the following code to implement the TMessages: 
 
 ```Delphi
 { TAppDelegateMessage_applicationDidFinishLaunchingWithOptions }
@@ -429,10 +429,15 @@ The [example application](https://github.com/grijjy/DelphiSocialFrameworks) show
 The [example application LoginWithFacebook](https://github.com/grijjy/DelphiSocialFrameworks) is available in the Grijjy GitHub repository.
 
 This project assumes you have applied the prerequisites discussed previously...
+
 1.  Added your Bundle ID or Project name to the Facebook developer Settings.
+
 2.  Placed the FBSDKCoreKit.a and FBSDKLoginKit.a into your Delphi library path.
+
 3.  Modified the info.plist.TemplateiOS.xml for your project.
+
 4.  Added the CoreData, Social and Accounts frameworks to your SDK Manager in Delphi.
+
 5.  Added your modified FMX.Platform.iOS with the application delegate messages to your project.      
 
 # I have an ID and an AccessToken, now what?
