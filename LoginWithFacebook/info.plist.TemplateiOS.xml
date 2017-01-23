@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<%VersionInfoPListKeys%>
+<%ExtraInfoPListKeys%>
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+    <key>CFBundleURLSchemes</key>
+    <array>
+    <string>fb12345678901234567890</string>
+    </array>
+    </dict>
+  </array>
+  <key>FacebookAppID</key>
+  <string>12345678901234567890</string>
+  <key>FacebookDisplayName</key>
+  <string>My Display Name</string>
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key><true/>
+    <key>NSExceptionDomains</key>
+    <dict>
+    <key>facebook.com</key>
+    <dict>
+      <key>NSIncludesSubdomains</key>
+      <true/>
+      <key>NSExceptionRequiresForwardSecrecy</key>
+      <false/>
+    </dict>
+    <key>fbcdn.net</key>
+    <dict>
+      <key>NSIncludesSubdomains</key>
+      <true/>
+      <key>NSExceptionRequiresForwardSecrecy</key>
+      <false/>
+    </dict>
+    <key>akamaihd.net</key>
+    <dict>
+      <key>NSIncludesSubdomains</key>
+      <true/>
+      <key>NSExceptionRequiresForwardSecrecy</key>
+      <false/>
+    </dict>
+    </dict>
+  </dict>  
+  <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>fbapi</string>
+      <string>fb-messenger-api</string>
+      <string>fbauth2</string>
+      <string>fbshareextension</string>
+	  <string>fb-messenger-platform-20150128</string>
+	  <string>fb-messenger-platform-20150218</string>
+	  <string>fb-messenger-platform-20150305</string>	  
+    </array>  
+</dict>
+</plist>
