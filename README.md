@@ -50,7 +50,9 @@ At this point you are ready to create an application of the same project name th
 You can download the Facebook SDK framework for iOS from the following location, https://developers.facebook.com/docs/ios
 
 To extract the static libraries required, unzip the SDK and copy the framework files to your Delphi library path:
+
 1. Copy and rename the FBSDKCoreKit.framework\FBSDKCoreKit to FBSDKCoreKit.a
+
 2. Copy and rename the FBSDKLoginKit.framework\FBSDKLoginKit to FBSDKLoginKit.a
 
 These frameworks will be linked into your project automatically when you include the `Grijjy.FBSDK.iOS.API` unit.
@@ -58,6 +60,7 @@ These frameworks will be linked into your project automatically when you include
 > Note: Delphi will not normally link these libraries into the project so we trick Delphi into link them by creating an import to an existing OBJ_CLASS inside of the static library in the `Grijjy.FBSDK.iOS.API` unit.
 >  
 > procedure StubProc1; cdecl; external 'FBSDKCoreKit.a' name 'OBJC_CLASS_$_FBSDKAccessToken';
+>
 > procedure StubProc2; cdecl; external 'FBSDKLoginKit.a' name 'OBJC_CLASS_$_FBSDKLoginManager';
  
 ## Modify your project's info.plist.TemplateiOS.xml
