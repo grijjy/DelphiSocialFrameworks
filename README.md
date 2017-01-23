@@ -34,13 +34,17 @@ To get started using the Facebook SDK framework for iOS inside your Delphi appli
 You should start by creating a Facebook developers accounts at https://developers.facebook.com
 
 To setup a new app for Facebook so you can test and build:
-1. Select the `Add new app for Facebook`, then provide a `Display Name`, then click `Create App ID`.  
+1. Select the `Add new app for Facebook`, then provide a `Display Name`, then click `Create App ID`.
+  
 2. Once the app is created on Facebook's dashboard, select `Settings`, `Basic` and note the `Display Name` and `App ID`.  You will need these values to communicate from your Delphi app.
+
 3. On the same page, click `Add Platform` and choose `iOS`.
-4. Under the `Bundle ID` for iOS you need to provide the name of your Delphi application.  This is usually the same as your Project name in Delphi (ex: LoginWithDelphi in our example).  You should also enable `Single Sign On` in the iOS section.  
+
+4. Under the `Bundle ID` for iOS you need to provide the name of your Delphi application.  This is usually the same as your Project name in Delphi (ex: LoginWithDelphi in our example).  You should also enable `Single Sign On` in the iOS section.
+  
 5. Click `Save Changes`.
 
-At this point you are reading a create an application of the same name that interacts with the Facebook APIs.
+At this point you are ready to create an application of the same project name that interacts with the Facebook APIs.
 
 ## Download the Facebook SDK for iOS
 You can download the Facebook SDK framework for iOS from the following location, https://developers.facebook.com/docs/ios
