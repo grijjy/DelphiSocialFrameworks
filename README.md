@@ -449,12 +449,14 @@ To add new API methods just create them in `TgoFacebook` class as new public met
 
 `FacebookSDK.GraphPath('me?fields=name,email');`
 
-This will result in a `TFacebookGraphResultMessage`.  `FacebookGraphResultMessage.Value.Result` will indicate success or failure.  Upon failure, `FacebookGraphResultMessage.Value.Error` will contain the error code.  If you are successful then `FacebookGraphResultMessage.Value.Json` will contain the resulting response.
+This will result in a `TFacebookGraphResultMessage`.  
+
+`TFacebookGraphResultMessage.Value.Result` will indicate success or failure.  Upon failure, `TFacebookGraphResultMessage.Value.Error` will contain the error code.  If you are successful then `TFacebookGraphResultMessage.Value.Json` will contain the resulting response.
 
 # Making Facebook API calls from your backend Delphi service 
 Although it is possible to make various GraphPath calls from your app as demonstrated above, you may choose or prefer to make calls from your backend service.
 
-The API methodology for GraphPath is the same, but since we do not need to embed framework SDKs into a server-side API, our examples will show how to make these calls directly using our own [scalable client socket framework](https://blog.grijjy.com/2017/01/09/scalable-https-and-tcp-client-sockets-for-the-cloud). 
+The API methodology for GraphPath is the same, but since we do not need to embed framework SDKs into a server-side API, our examples will show how to make these calls directly using HTTP with our own [scalable client socket framework](https://blog.grijjy.com/2017/01/09/scalable-https-and-tcp-client-sockets-for-the-cloud). 
 
 The unit [Grijjy.FacebookAPI](https://github.com/grijjy/DelphiSocialFrameworks/blob/master/Grijjy.FacebookAPI.pas) in our GitHub repository demonstrates how to make calls from your backend service directly to the Facebook Graph APIs over HTTP.  The class `TFacebook` implements various methods for the GraphPath API calls.
 
@@ -533,9 +535,9 @@ To use these methods you must construct `TFacebook.Create(MyAppId, MyAppSecret)`
 The method `TFacebook.DebugToken` in the class is used to validate the token.  You supply a given user access token as the `AInputToken` and it will provide you with a `ADebugAccessToken` that you can use for requests, `AAppId` for the application id and an `AUserId` for the app scoped user id that relates to the input token.  If the method fails it indicates that the token is invalid or expired.
 
 ## Email addresses of Facebook users
-The method `TFacebook.DebugGetUser` shows an example of using the above API directly from your backend service to request information about the given user that relates to the access token along.  In this case we are obtaining the email address of the Facebook user.
+The method `TFacebook.DebugGetUser` shows an example of using the above API directly from your backend service to request information about the given user that relates to the access token.  In this case we are obtaining the email address of the Facebook user.
 
-[Facebook and most other social network APIs suggest you use email addresses](https://developers.facebook.com/docs/facebook-login/multiple-providers) as either a primary or secondary index in your own service if you intend to use social login.  Since User IDs in Facebook are app-scoped, it is important that you can correlate a given user with their account in your own service.  Users of your app may choose to use another social network to login such as Twitter, so having their email address to establish a correlation to an account on your own system is important.
+[Facebook and most other social network APIs suggest you use email addresses](https://developers.facebook.com/docs/facebook-login/multiple-providers) as either a primary or secondary index in your own service if you intend to use social login.  Both Facebook and Twitter provide access through their API unless a user has specifically blocked it.  Since User IDs in Facebook are app-scoped, it is important that you can correlate a given user with their account in your own service.  Users of your app may choose to use another social network to login such as Twitter, so having their email address to establish a correlation to an account on your own system is important.
 
 # Conclusion
 Phew, well that is all for now.  I know it seems like a lot of steps to embed the Facebook framework but wait until you see what it takes for Android!  With a few changes Delphi could much more easily consume iOS frameworks made for Objective C projects and Android SDKs made for Java/Android Studio. 
