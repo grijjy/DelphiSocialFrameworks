@@ -25,7 +25,9 @@ type
     function OAuth2_Url: String;
   public
     function DebugToken(const AInputToken: String; out ADebugAccessToken: String;
-      out AAppId, AUserId: String): Integer;
+      out AAppId, AUserId: String; out AIsShortLived: Boolean): Integer;
+    function ExchangeToken(const AInputToken: String;
+      out ALongLivedAccessToken: String): Integer;
     function DebugGetUser(const AInputToken: String; out AAppId, AId, AName, AEmail: String): Integer;
   public
     function GetUser(const AUserId: String; out AUser: TFacebookUser): Integer;
@@ -104,10 +106,11 @@ begin
 end;
 
 function TFacebook.DebugToken(const AInputToken: String; out ADebugAccessToken: String;
-  out AAppId, AUserId: String): Integer;
+  out AAppId, AUserId: String; out AIsShortLived: Boolean): Integer;
 var
   HTTP: TgoHTTPClient;
   Doc, DataDoc: TgoBsonDocument;
+  Value: TgoBsonValue;
   Response: String;
 begin
   HTTP := TgoHTTPClient.Create;
@@ -129,8 +132,26 @@ begin
         DataDoc := Doc['data'].AsBsonDocument;
         AAppId := DataDoc['app_id'];
         AUserId := DataDoc['user_id'];
+        AIsShortLived := not DataDoc.TryGetValue('issued_at', Value);
       end;
     end;
+  finally
+    HTTP.Free;
+  end;
+end;
+
+function TFacebook.ExchangeToken(const AInputToken: String; out ALongLivedAccessToken: String): Integer;
+var
+  HTTP: TgoHTTPClient;
+begin
+  HTTP := TgoHTTPClient.Create;
+  try
+    ALongLivedAccessToken := HTTP.Get('https://graph.facebook.com/oauth/access_token?' +
+      'client_id=' + FClientId +
+      '&client_secret=' + FClientSecret +
+      '&grant_type=fb_exchange_token' +
+      '&fb_exchange_token=' + AInputToken);
+    Result := HTTP.ResponseStatusCode;
   finally
     HTTP.Free;
   end;
@@ -141,8 +162,9 @@ var
   Doc: TgoBsonDocument;
   Response: String;
   DebugAccessToken: String;
+  ShortLived: Boolean;
 begin
-  Result := DebugToken(AInputToken, DebugAccessToken, AAppId, AId);
+  Result := DebugToken(AInputToken, DebugAccessToken, AAppId, AId, ShortLived);
   if Result = 200 then
   begin
     Result := Get('https://graph.facebook.com/' + AId + '?fields=name,email&' + DebugAccessToken, Response);

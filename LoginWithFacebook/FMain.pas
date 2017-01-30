@@ -63,12 +63,18 @@ var
   SocialLoginMessage: TgoSocialLoginMessage;
 begin
   SocialLoginMessage := M as TgoSocialLoginMessage;
-  if SocialLoginMessage.Value.Result then
-    ShowMessage(
-      'Success Id = ' + SocialLoginMessage.Value.Id +
-      ' AccessToken = ' + SocialLoginMessage.Value.AccessToken)
-  else
-    ShowMessage('Failed');
+
+  { since the callback may be from another thread than the main thread}
+  TThread.Synchronize(Nil,
+    procedure
+    begin
+      if SocialLoginMessage.Value.Result then
+        ShowMessage(
+          'Success Id = ' + SocialLoginMessage.Value.Id +
+          ' AccessToken = ' + SocialLoginMessage.Value.AccessToken)
+      else
+        ShowMessage('Failed');
+    end);
 end;
 
 procedure TFormMain.ButtonLoginFacebookClick(Sender: TObject);

@@ -4,71 +4,16 @@
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>
     <PropertyGroup>
-        <DeviceId Condition="'$(Platform)'=='Android'"/>
+        <DeviceId Condition="'$(Platform)'=='Android'">04241158012360049ddd</DeviceId>
         <DeviceId Condition="'$(Platform)'=='iOSDevice32'"/>
         <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
         <DeviceId Condition="'$(Platform)'=='iOSSimulator'">iPhone5</DeviceId>
     </PropertyGroup>
-    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice64'">
-        <DeployFile Include="iOSDevice64\Debug\LoginWithFacebook.dSYM" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
-            <RemoteName>LoginWithFacebook</RemoteName>
-            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>Default~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>Default-Portrait~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch768x1024</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>Default-568h@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640x1136</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
-            <DeployClass>iPhone_AppIcon180</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
             <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
             <DeployClass>iPhone_AppIcon57</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
-            <DeployClass>iPhone_AppIcon114</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -83,100 +28,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
-            <DeployClass>iPad_SpotLight50</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
-            <DeployClass>iPad_AppIcon76</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
-            <DeployClass>iPhone_Spotlight80</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
-            <DeployClass>iPad_SpotLight80</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
-            <DeployClass>iPhone_AppIcon60</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
             <RemoteName>Default-667h@2x.png</RemoteName>
             <DeployClass>iPhone_Launch750</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
-            <DeployClass>iPhone_Launch2208</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
-            <DeployClass>iPad_Setting29</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="iOSDevice64\Debug\LoginWithFacebook.entitlements" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\..\</RemoteDir>
-            <RemoteName>LoginWithFacebook.entitlements</RemoteName>
-            <DeployClass>ProjectiOSEntitlements</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
-            <DeployClass>iPhone_Spotlight40</DeployClass>
-            <Operation>0</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>Default-736h@3x.png</RemoteName>
-            <DeployClass>iPhone_Launch1242</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -187,24 +42,6 @@
             <RemoteName>Info.plist</RemoteName>
             <DeployClass>ProjectiOSInfoPList</DeployClass>
             <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>Default@2x.png</RemoteName>
-            <DeployClass>iPhone_Launch640</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
-            <DeployClass>iPad_Setting58</DeployClass>
-            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
@@ -227,28 +64,55 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>Default-Landscape.png</RemoteName>
-            <DeployClass>iPad_Launch1024</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
-            <DeployClass>iPad_AppIcon72</DeployClass>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <DeployClass>iPhone_AppIcon120</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
-            <DeployClass>iPad_AppIcon152</DeployClass>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <DeployClass>iPad_AppIcon76</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPad_SpotLight80</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <DeployClass>iPhone_Spotlight40</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch1242</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -263,15 +127,32 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="iOSDevice64\Debug\LoginWithFacebook" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>LoginWithFacebook</RemoteName>
-            <DeployClass>ProjectOutput</DeployClass>
-            <Operation>1</Operation>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <DeployClass>iPhone_AppIcon60</DeployClass>
+            <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
-            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <DeployClass>iPad_Setting58</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
         </DeployFile>
         <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
@@ -282,37 +163,56 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
-            <DeployClass>iPhone_Spotlight29</DeployClass>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <DeployClass>iPad_SpotLight100</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
-            <DeployClass>iPhone_AppIcon120</DeployClass>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <DeployClass>iPhone_Spotlight80</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="iOSDevice64\Debug\ResourceRules.plist" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>ResourceRules.plist</RemoteName>
-            <DeployClass>ProjectiOSDeviceResourceRules</DeployClass>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <DeployClass>iPhone_Launch2208</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <DeployClass>iPad_Launch1024</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="iOSDevice64\Debug\LoginWithFacebook" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1536x2048</DeployClass>
+            <RemoteName>LoginWithFacebook</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <DeployClass>iPhone_Spotlight29</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -327,10 +227,82 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
-            <DeployClass>iPad_SpotLight100</DeployClass>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640x1136</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice64\Debug\LoginWithFacebook.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\..\</RemoteDir>
+            <RemoteName>LoginWithFacebook.entitlements</RemoteName>
+            <DeployClass>ProjectiOSEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <DeployClass>iPhone_Launch640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice64\Debug\LoginWithFacebook.dSYM" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>LoginWithFacebook</RemoteName>
+            <DeployClass>ProjectiOSDeviceDebug</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <DeployClass>iPad_SpotLight50</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <DeployClass>iPhone_AppIcon180</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <DeployClass>iPad_Setting29</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <DeployClass>iPad_AppIcon72</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -345,10 +317,28 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>Default-Landscape~ipad.png</RemoteName>
-            <DeployClass>iPad_Launch1024x768</DeployClass>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <DeployClass>iPad_Launch768x1024</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <DeployClass>iPhone_AppIcon114</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <DeployClass>iPad_AppIcon152</DeployClass>
             <Operation>0</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -363,7 +353,17 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="iOSDevice64\Debug\ResourceRules.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <DeployClass>ProjectiOSDeviceResourceRules</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
     </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
     <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
     <ItemGroup Condition="'$(Platform)'=='Win32'">
         <DeployFile Include="Win32\Debug\LoginWithFacebook.exe" Condition="'$(Config)'=='Debug'">
@@ -377,7 +377,6 @@
             <Required>True</Required>
         </DeployFile>
     </ItemGroup>
-    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
     <ItemGroup Condition="'$(Platform)'=='OSX32'">
         <DeployFile Include="$(BDS)\Redist\osx32\libcgsqlite3.dylib">
             <RemoteDir>LoginWithFacebook.app\Contents\MacOS\</RemoteDir>
@@ -398,20 +397,2713 @@
             <Overwrite>True</Overwrite>
         </DeployFile>
     </ItemGroup>
-    <ItemGroup Condition="'$(Platform)'=='Android'"/>
+    <ItemGroup Condition="'$(Platform)'=='Android'">
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_blue_bottomnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-el\values-el.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-el\</RemoteDir>
+            <RemoteName>values-el.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_send_icon_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_background.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-bn\values-bn.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-bn\</RemoteDir>
+            <RemoteName>values-bn.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_white_small.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_white_small.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_blue_xout.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-fi\values-fi.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-fi\</RemoteDir>
+            <RemoteName>values-fi.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-gu\values-gu.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-gu\</RemoteDir>
+            <RemoteName>values-gu.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-nl\values-nl.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-nl\</RemoteDir>
+            <RemoteName>values-nl.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-small\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_send_background.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_send_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_icon_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_icon_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_icon_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_blue_topnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_bubble_large_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_bubble_small_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\libLoginWithFacebook.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libLoginWithFacebook.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-hu\values-hu.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-hu\</RemoteDir>
+            <RemoteName>values-hu.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\messenger_button_blue_bg_round.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>messenger_button_blue_bg_round.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>splash_image_def.xml</RemoteName>
+            <DeployClass>AndroidSplashImageDef</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_button_send_round_shadow.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_button_send_round_shadow.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-cs\values-cs.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-cs\</RemoteDir>
+            <RemoteName>values-cs.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\color\com_facebook_send_button_text_color.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\color\</RemoteDir>
+            <RemoteName>com_facebook_send_button_text_color.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_icon.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_icon.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_send_icon_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_bubble_large_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-mr\values-mr.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-mr\</RemoteDir>
+            <RemoteName>values-mr.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_profile_picture_blank_square.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_profile_picture_blank_square.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_black_bottomnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-pt-rPT\values-pt-rPT.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-pt-rPT\</RemoteDir>
+            <RemoteName>values-pt-rPT.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-tr\values-tr.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-tr\</RemoteDir>
+            <RemoteName>values-tr.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_like_icon_selected.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_like_icon_selected.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_black_bottomnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_black_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-zh-rTW\values-zh-rTW.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-zh-rTW\</RemoteDir>
+            <RemoteName>values-zh-rTW.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_black_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_blue_topnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-pt-rPT\values-pt-rPT.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-pt-rPT\</RemoteDir>
+            <RemoteName>values-pt-rPT.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_button_send_round_shadow.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_button_send_round_shadow.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_icon_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ko\values-ko.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-ko\</RemoteDir>
+            <RemoteName>values-ko.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_close.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_close.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_black_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-it\values-it.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-it\</RemoteDir>
+            <RemoteName>values-it.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_white_round.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_white_round.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-large\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_bubble_large_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-af\values-af.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-af\</RemoteDir>
+            <RemoteName>values-af.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_bubble_small_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_bubble_large_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_bubble_small_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_profile_picture_blank_portrait.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_profile_picture_blank_portrait.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\com_facebook_button_icon_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_blue_large.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_blue_large.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-sk\values-sk.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-sk\</RemoteDir>
+            <RemoteName>values-sk.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_like_background.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_like_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_bubble_large_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\styles.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStyles</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_send_icon_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\messenger_button_blue_bg_round.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>messenger_button_blue_bg_round.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_bubble_small_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\com_facebook_button_like_icon_selected.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_like_icon_selected.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-fr\values-fr.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-fr\</RemoteDir>
+            <RemoteName>values-fr.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-tl\values-tl.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-tl\</RemoteDir>
+            <RemoteName>values-tl.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_black_topnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_auth_dialog_header_background.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_auth_dialog_header_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-nb\values-nb.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-nb\</RemoteDir>
+            <RemoteName>values-nb.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values\values.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-sv\values-sv.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-sv\</RemoteDir>
+            <RemoteName>values-sv.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_blue_xout.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\messenger_button_blue_bg_selector.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>messenger_button_blue_bg_selector.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_button_send_round_shadow.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_button_send_round_shadow.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-cs\values-cs.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-cs\</RemoteDir>
+            <RemoteName>values-cs.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_like_icon_selected.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_like_icon_selected.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_bubble_small_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_icon_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-zh-rCN\values-zh-rCN.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-zh-rCN\</RemoteDir>
+            <RemoteName>values-zh-rCN.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_white_round.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_white_round.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_close.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_close.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_black_xout.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_send_icon_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_bubble_small_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_blue_bottomnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_black_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_blue_round.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_blue_round.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_blue_bottomnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_black_bottomnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ar\values-ar.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-ar\</RemoteDir>
+            <RemoteName>values-ar.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_black_topnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_login_background.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_login_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_white_large.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_white_large.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-sk\values-sk.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-sk\</RemoteDir>
+            <RemoteName>values-sk.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_bubble_large_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ar\values-ar.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-ar\</RemoteDir>
+            <RemoteName>values-ar.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-de\values-de.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-de\</RemoteDir>
+            <RemoteName>values-de.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-sv\values-sv.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-sv\</RemoteDir>
+            <RemoteName>values-sv.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\library\lib\mips\</RemoteDir>
+            <RemoteName>libLoginWithFacebook.so</RemoteName>
+            <DeployClass>AndroidLibnativeMipsFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-pl\values-pl.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-pl\</RemoteDir>
+            <RemoteName>values-pl.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\messenger_button_white_bg_selector.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>messenger_button_white_bg_selector.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_black_topnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_black_bottomnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-zh-rHK\values-zh-rHK.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-zh-rHK\</RemoteDir>
+            <RemoteName>values-zh-rHK.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\AndroidManifest.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\</RemoteDir>
+            <RemoteName>AndroidManifest.xml</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_bubble_large_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_blue_xout.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_close.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_close.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_blue_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_login_logo.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_login_logo.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_close.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_close.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_device_auth_dialog_fragment.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_device_auth_dialog_fragment.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-da\values-da.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-da\</RemoteDir>
+            <RemoteName>values-da.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_login_background.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_login_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_login_silver_background.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_login_silver_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ml\values-ml.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-ml\</RemoteDir>
+            <RemoteName>values-ml.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_blue_xout.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ms\values-ms.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-ms\</RemoteDir>
+            <RemoteName>values-ms.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-pa\values-pa.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-pa\</RemoteDir>
+            <RemoteName>values-pa.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-tr\values-tr.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-tr\</RemoteDir>
+            <RemoteName>values-tr.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-nl\values-nl.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-nl\</RemoteDir>
+            <RemoteName>values-nl.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\messenger_button_white_bg_selector.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>messenger_button_white_bg_selector.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_bubble_large_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-gu\values-gu.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-gu\</RemoteDir>
+            <RemoteName>values-gu.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\com_facebook_button_like_icon_selected.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_like_icon_selected.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\color\com_facebook_send_button_text_color.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\color\</RemoteDir>
+            <RemoteName>com_facebook_send_button_text_color.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_bubble_small_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-de\values-de.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-de\</RemoteDir>
+            <RemoteName>values-de.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ja\values-ja.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-ja\</RemoteDir>
+            <RemoteName>values-ja.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xlarge\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\messenger_button_white_bg_round.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>messenger_button_white_bg_round.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-bn\values-bn.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-bn\</RemoteDir>
+            <RemoteName>values-bn.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_button_send_round_shadow.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_button_send_round_shadow.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_send_icon_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_close.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_close.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_black_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-id\values-id.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-id\</RemoteDir>
+            <RemoteName>values-id.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_icon_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_bubble_small_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-in\values-in.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-in\</RemoteDir>
+            <RemoteName>values-in.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ko\values-ko.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-ko\</RemoteDir>
+            <RemoteName>values-ko.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-pt\values-pt.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-pt\</RemoteDir>
+            <RemoteName>values-pt.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_icon_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_blue_round.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_blue_round.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_like_background.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_like_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_470x320.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-normal\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_background.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_blue_bottomnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_blue_xout.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\messenger_button_blue_bg_selector.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>messenger_button_blue_bg_selector.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_login_silver_background.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_login_silver_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_blue_xout.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_bubble_large_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_blue_large.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_blue_large.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-es-rES\values-es-rES.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-es-rES\</RemoteDir>
+            <RemoteName>values-es-rES.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_black_topnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-el\values-el.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-el\</RemoteDir>
+            <RemoteName>values-el.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_bubble_large_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_bubble_large_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_auth_dialog_background.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_auth_dialog_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_send_button_icon.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_send_button_icon.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_bubble_large_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-es\values-es.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-es\</RemoteDir>
+            <RemoteName>values-es.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-af\values-af.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-af\</RemoteDir>
+            <RemoteName>values-af.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ta\values-ta.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-ta\</RemoteDir>
+            <RemoteName>values-ta.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_device_auth_dialog_fragment.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_device_auth_dialog_fragment.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_send_icon_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_bubble_small_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_button_send_round_shadow.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_button_send_round_shadow.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_blue_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_bubble_small_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_activity_layout.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_activity_layout.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_button_send_round_shadow.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_button_send_round_shadow.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-hr\values-hr.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-hr\</RemoteDir>
+            <RemoteName>values-hr.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_blue_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_bubble_small_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_favicon_blue.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_favicon_blue.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_bubble_large_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values\strings.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values\</RemoteDir>
+            <RemoteName>strings.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-zh-rCN\values-zh-rCN.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-zh-rCN\</RemoteDir>
+            <RemoteName>values-zh-rCN.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_smart_device_dialog_fragment.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_smart_device_dialog_fragment.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-id\values-id.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-id\</RemoteDir>
+            <RemoteName>values-id.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_blue_topnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_auth_dialog_cancel_background.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_auth_dialog_cancel_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ja\values-ja.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-ja\</RemoteDir>
+            <RemoteName>values-ja.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_send_icon_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_bubble_large_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-nb\values-nb.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-nb\</RemoteDir>
+            <RemoteName>values-nb.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_send_icon_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_bubble_small_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_send_icon_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_icon.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_icon.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_like_icon_selected.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_like_icon_selected.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-it\values-it.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-it\</RemoteDir>
+            <RemoteName>values-it.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_send_background.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_send_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ms\values-ms.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-ms\</RemoteDir>
+            <RemoteName>values-ms.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-th\values-th.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-th\</RemoteDir>
+            <RemoteName>values-th.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_bubble_small_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_blue_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_blue_background.9.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_bubble_large_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ml\values-ml.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-ml\</RemoteDir>
+            <RemoteName>values-ml.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_close.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_close.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\com_facebook_button_send_icon_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_like_icon_selected.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_like_icon_selected.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-kn\values-kn.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-kn\</RemoteDir>
+            <RemoteName>values-kn.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ru\values-ru.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-ru\</RemoteDir>
+            <RemoteName>values-ru.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_black_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_black_bottomnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_favicon_blue.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_favicon_blue.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_send_icon_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-in\values-in.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-in\</RemoteDir>
+            <RemoteName>values-in.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_auth_dialog_background.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_auth_dialog_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_profile_picture_blank_square.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_profile_picture_blank_square.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_like_icon_selected.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_like_icon_selected.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_auth_dialog_cancel_background.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_auth_dialog_cancel_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_icon_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_send_icon_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_black_topnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\messenger_button_send_round_shadow.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>messenger_button_send_round_shadow.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_button_icon_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\com_facebook_button_icon_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_tooltip_bubble.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_bubble.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-te\values-te.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-te\</RemoteDir>
+            <RemoteName>values-te.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-zh-rHK\values-zh-rHK.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-zh-rHK\</RemoteDir>
+            <RemoteName>values-zh-rHK.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-kn\values-kn.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-kn\</RemoteDir>
+            <RemoteName>values-kn.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-zh-rTW\values-zh-rTW.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-zh-rTW\</RemoteDir>
+            <RemoteName>values-zh-rTW.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_button_login_logo.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_button_login_logo.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ru\values-ru.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-ru\</RemoteDir>
+            <RemoteName>values-ru.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-ta\values-ta.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-ta\</RemoteDir>
+            <RemoteName>values-ta.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_activity_layout.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_activity_layout.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_bubble_small_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_tooltip_bubble.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_bubble.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-hi\values-hi.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-hi\</RemoteDir>
+            <RemoteName>values-hi.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-pl\values-pl.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-pl\</RemoteDir>
+            <RemoteName>values-pl.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_send_icon_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_icon_blue.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-da\values-da.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-da\</RemoteDir>
+            <RemoteName>values-da.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_profile_picture_blank_portrait.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_profile_picture_blank_portrait.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values\values.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values\</RemoteDir>
+            <RemoteName>values.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-vi\values-vi.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-vi\</RemoteDir>
+            <RemoteName>values-vi.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-fr\values-fr.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-fr\</RemoteDir>
+            <RemoteName>values-fr.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\com_facebook_button_send_icon_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_send_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-tl\values-tl.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-tl\</RemoteDir>
+            <RemoteName>values-tl.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-mr\values-mr.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-mr\</RemoteDir>
+            <RemoteName>values-mr.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_blue_small.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_blue_small.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\color\com_facebook_button_text_color.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\color\</RemoteDir>
+            <RemoteName>com_facebook_button_text_color.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\com_facebook_button_icon_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_bubble_small_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-es\values-es.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-es\</RemoteDir>
+            <RemoteName>values-es.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_black_xout.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_black_bottomnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_black_xout.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_smart_device_dialog_fragment.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_smart_device_dialog_fragment.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\com_facebook_button_icon_white.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_send_button_icon.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_send_button_icon.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_black_xout.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_black_xout.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-pt\values-pt.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-pt\</RemoteDir>
+            <RemoteName>values-pt.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-hr\values-hr.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-hr\</RemoteDir>
+            <RemoteName>values-hr.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libLoginWithFacebook.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\color\com_facebook_button_text_color.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\color\</RemoteDir>
+            <RemoteName>com_facebook_button_text_color.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_black_xout.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_xout.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_blue_bottomnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xxhdpi-v4\messenger_bubble_small_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xxhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_small_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_white_large.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_white_large.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\messenger_bubble_large_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>messenger_bubble_large_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-hi\values-hi.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-hi\</RemoteDir>
+            <RemoteName>values-hi.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values\strings.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values\</RemoteDir>
+            <RemoteName>strings.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-es-rES\values-es-rES.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-es-rES\</RemoteDir>
+            <RemoteName>values-es-rES.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_login_fragment.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_login_fragment.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_tooltip_blue_background.9.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_background.9.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_blue_topnub.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-fi\values-fi.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-fi\</RemoteDir>
+            <RemoteName>values-fi.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-pa\values-pa.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-pa\</RemoteDir>
+            <RemoteName>values-pa.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_black_topnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_black_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\messenger_button_white_bg_round.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>messenger_button_white_bg_round.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-vi\values-vi.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-vi\</RemoteDir>
+            <RemoteName>values-vi.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-hdpi-v4\com_facebook_tooltip_blue_topnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-hdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable\com_facebook_auth_dialog_header_background.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable\</RemoteDir>
+            <RemoteName>com_facebook_auth_dialog_header_background.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_white_small.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_white_small.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\com_facebook_login_fragment.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>com_facebook_login_fragment.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_blue_bottomnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_bottomnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_icon_blue.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_blue.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-te\values-te.xml" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\values-te\</RemoteDir>
+            <RemoteName>values-te.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_button_like_icon_selected.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_like_icon_selected.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-hu\values-hu.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-hu\</RemoteDir>
+            <RemoteName>values-hu.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\messenger_button_send_round_shadow.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>messenger_button_send_round_shadow.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\layout\messenger_button_send_blue_small.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\layout\</RemoteDir>
+            <RemoteName>messenger_button_send_blue_small.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\values-th\values-th.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\values-th\</RemoteDir>
+            <RemoteName>values-th.xml</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-mdpi-v4\com_facebook_button_icon_white.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-mdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_button_icon_white.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Resources\Android\res\drawable-xhdpi-v4\com_facebook_tooltip_blue_topnub.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LoginWithFacebook\res\drawable-xhdpi-v4\</RemoteDir>
+            <RemoteName>com_facebook_tooltip_blue_topnub.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
-        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>libPCRE.dylib</RemoteName>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
             <DeployClass>DependencyModule</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib">
+        <DeployFile Include="$(BDS)\Redist\iossimulator\libPCRE.dylib">
             <RemoteDir>LoginWithFacebook.app\</RemoteDir>
-            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <RemoteName>libPCRE.dylib</RemoteName>
             <DeployClass>DependencyModule</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>

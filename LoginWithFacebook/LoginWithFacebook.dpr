@@ -10,12 +10,8 @@ uses
   Grijjy.SysUtils in '..\..\GrijjyFoundation\Grijjy.SysUtils.pas',
   Grijjy.BinaryCoding in '..\..\GrijjyFoundation\Grijjy.BinaryCoding.pas',
   Grijjy.Social in '..\..\GrijjyFoundation\Grijjy.Social.pas',
-  Grijjy.FBSDK.iOS.API in '..\Grijjy.FBSDK.iOS.API.pas',
-  Grijjy.FBSDK.iOS in '..\Grijjy.FBSDK.iOS.pas',
   Grijjy.FBSDK in '..\Grijjy.FBSDK.pas',
-  Grijjy.FBSDK.Types in '..\Grijjy.FBSDK.Types.pas',
-  Grijjy.Accounts.iOS.API in '..\Grijjy.Accounts.iOS.API.pas',
-  Grijjy.iOSapi.UIKit in '..\Grijjy.iOSapi.UIKit.pas';
+  Grijjy.FBSDK.Types in '..\Grijjy.FBSDK.Types.pas';
 
 {$R *.res}
 

@@ -105,8 +105,6 @@ begin
     SocialLoginMessage := TgoSocialLoginMessage.Create(SocialLogin);
     TMessageManager.DefaultManager.SendMessage(Self, SocialLoginMessage);
   end;
-  {$ELSEIF Defined(MSWINDOWS) and Defined(WINDOWS_SOCIAL)}
-  FacebookSDK.LogIn(['public_profile', 'user_friends', 'email']);
   {$ELSE}
   { Facebook (currently) unsupported for this platform }
   SocialLogin.Result := False;
@@ -121,8 +119,6 @@ end;
 function TgoFacebook.GetAccessToken: String;
 begin
   {$IF Defined(IOS) or Defined(ANDROID)}
-  Result := FacebookSDK.CurrentAccessToken;
-  {$ELSEIF Defined(MSWINDOWS) and Defined(WINDOWS_SOCIAL)}
   Result := FacebookSDK.CurrentAccessToken;
   {$ELSE}
   Result := '';
