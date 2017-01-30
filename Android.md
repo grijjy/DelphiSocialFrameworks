@@ -172,7 +172,7 @@ I bet you are wondering right now how long will it take to add more than 140 fil
 
 In Android Studio we simply specify our resource locations and Android Studio automatically makes sure that all the resources and sub-folder resources are collected and merged.  Isn't that nice?
 
-Here at Grijjy we needed a solution so we developed our own Delphi Deployment Manager alternative (for iOS and Android platforms only) called [DeployMan](https://github.com/grijjy/DelphiSocialFrameworks/DeployMan).
+Here at Grijjy we needed a solution so we developed our own Delphi Deployment Manager alternative (for iOS and Android platforms only) called [DeployMan](https://github.com/grijjy/DelphiSocialFrameworks/tree/master/DeployMan).
 
 ### USE THIS TOOL AT YOUR OWN RISK - BACKUP YOUR DPROJ FIRST
 
@@ -188,7 +188,7 @@ Then finally you click `Save Project + .dproj` which creates a `.grdeploy` file 
 
 Once you reopen your Delphi project and open the Deployment Manager in Delphi you should see that it automatically populated all the resource entries for you.
 
-You can download DeployMan [here](https://github.com/grijjy/DelphiSocialFrameworks/DeployMan).
+You can download DeployMan [here](https://github.com/grijjy/DelphiSocialFrameworks/tree/master/DeployMan).
 
 # Delphi challenges building Android with 3rd party libraries
 As we discussed in the [previous article on using the Facebook iOS](iOS.md) framework within Delphi there are some unique challenges.  The 2 main challenges for iOS are the lack of usable application delegates in the RTL and an easy ability to link static libraries without stubbing out a fake procedure to a cdecl import.  With these 2 modifications integrated into the Delphi build environment, we could use and consume most any 3rd-party iOS frameworks.  
@@ -379,7 +379,7 @@ This will result in a `TFacebookGraphResultMessage`.
 # How to combine resources from multiple libraries
 If you have resources from multiple distinctly different SDKS on Android you may encounter a problem where a resource file exists in more than one library with the same name.  This is normal behavior for Android resources and the build tools for Android take care of merging the resource files into a common target file before the final build.
 
-This is a critical step before the R.Java is created and the resource ids are assigned.  To work around this limitation with building in Delphi we created an [XmlMerge tool](https://github.com/grijjy/DelphiSocialFrameworks/XmlMerge) at Grijjy.  The tool examines all files and folders in one or more given paths, merges them in memory and saves the result of merged resources to a target location.
+This is a critical step before the R.Java is created and the resource ids are assigned.  To work around this limitation with building in Delphi we created an [XmlMerge tool](https://github.com/grijjy/DelphiSocialFrameworks/tree/master/XmlMerge) at Grijjy.  The tool examines all files and folders in one or more given paths, merges them in memory and saves the result of merged resources to a target location.
 
 Consider the following,
 `XmlMerge.exe <path_to_merged_res> <source_path_res1> <source_path_res2> etc...`
@@ -387,7 +387,7 @@ Consider the following,
 The above command merges the 2 distinct paths indicated (and all subfolders and files) and copies that result to the merged resource location.
 > Note: While you do not need this tool if you are only using one SDK like the Facebook SDK for Android in your project, you will need it if you have more than one SDK (like using both the Facebook and Twitter SDK for Android which we will cover in a future article) or you already have numerous existing project resources that may need to be merged.
 
-You can download XmlMerge [here](https://github.com/grijjy/DelphiSocialFrameworks/XmlMerge).
+You can download XmlMerge [here](https://github.com/grijjy/DelphiSocialFrameworks/tree/master/XmlMerge).
 
 # Conclusion
 The techniques we have discussed in this article such as using DeployMan and XmlMerge to handle resources and rebuilding the Classes.dex as a Post Build event are applicable to many other Android SDKs and using them in Delphi.
